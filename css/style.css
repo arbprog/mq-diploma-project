@@ -1,4 +1,108 @@
-h1 {
-    font-size: 42px;
-    color: #cc003d;
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
 }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ******ШАПКА****** */
+
+.header-container {
+    position: relative;
+    background-image: url(../images/img/football_767.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0 left 0;
+}
+
+.header-container::before {
+    content: "";
+    background-color: rgba(94, 66, 176,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.logo, .hero, .app-buttons {
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 10em;
+    margin: auto;
+}
+
+.surface-logo {
+    margin-top: 2.5em;
+    fill: #ffffff;
+}
+
+.hero {
+    margin-top: 11em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.first-slogan {
+    margin-left: 0.8em;
+}
+
+.second-slogan {
+    margin-left: 2.5em;
+    margin-top: 1em;
+}
+
+.buttons-list {
+    margin-top: 6em;
+    padding-bottom: 6em;
+}
+
+.app-buttons {
+    width: 22em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5e42b0;
+    border-radius: 30px;
+ }
+
+.app-button {
+    display: flex;
+    width: 11em;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.app-button-logo {
+    margin-top: 0.9em;
+    margin-right: 0.6em;
+    width: 4em;
+    height: 4em;
+}
+
+.app-button-text {
+    font-size: 0.8em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.store {
+    font-weight: 900;
+}
+
+.googleplay-button {
+    margin-top: 1em;
+}
+
+
+/* ******ШАПКА****** */
