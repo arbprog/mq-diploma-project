@@ -31,201 +31,200 @@ a {
     text-decoration: none;
 }
 
-/* ******ШАПКА****** */
-
+/* ****** ШАПКА ****** */
 .header {
     position: relative;
     background-image: url(../images/img/football_767.jpg);
+    background-color: #000;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top 0 left 0;
+    background-size: 150%;
+    background-position: -5.5em -2.5em;
 }
 
 .header::before {
     content: "";
-    background-color: rgba(43, 25, 94, 0.8);
     position: absolute;
+    background-color: rgba(12, 3, 39, 0.9);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  .header-container {
+      position: relative;
+      z-index: 1;
+  }
+
+  .header-container-logo {
+      display: flex;
+      justify-content: center;
+  }
+
+  .surface-logo {
+      width: 10em;
+      margin-top: 2em;
+  }
+
+  .header-container-info {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 11.5em;
+      color: #ffffff;
+      text-transform: uppercase;
+  }
+
+  .second-slogan {
+      margin-left: 3em;
+      margin-top: 0.5em;
+  }
+
+  .buttons-list {
+      margin-top: 8em;
+  }
+
+  .buttons {
+      padding-bottom: 8em;
+  }
+
+  .button {
+      display: flex;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      background-color: #5e42b0;
+      border-radius: 30px;
+      align-items: flex-end;
+      padding: 0.5em;
+  }
+
+  .store-logo {
+      width: 2.5em;
+      margin-left: 6em;
+  }
+
+  .button-title {
+      font-size: 0.7em;
+      color: #fff;
+      text-transform: uppercase;
+      margin-left: 0.8em;
+  }
+
+  .button-store-title {
+      font-weight: 900;
+  }
+
+  .googleplay {
+      margin-top: 1em;
+  }
+  
+/* ****** ШАПКА ****** */
+
+/* ****** ОСНОВНАЯ ИНФОРМАЦИЯ ****** */
+
+.cards-title {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4em;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.header-container {
+.card-image {
+    position: absolute;
+}
+
+.footballer {
+    left: 5em;
+}
+
+.card-info {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.logo, .hero, .app-buttons {
-    position: relative;
-    z-index: 1;
-}
-
-.logo {
-    width: 10em;
-    margin: auto;
-}
-
-.surface-logo {
-    margin-top: 2.5em;
-    fill: #ffffff;
-}
-
-.hero {
-    font-size: 1.1em;
-    margin-top: 10em;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-
-.second-slogan {
-    margin-left: 2.3em;
-    margin-top: 1em;
-}
-
-.buttons-list {
-    margin-top: 6em;
-    padding-bottom: 6em;
-}
-
-.app-buttons {
-    background-color: #5e42b0;
-    border-radius: 30px;
- }
-
-.app-button {
-    display: flex;
-    width: 9.5em;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-}
-
-.app-button-logo {
-    margin-top: 0.9em;
-    margin-right: 0.6em;
-    width: 3em;
-    height: 3em;
-}
-
-.app-button-text {
-    font-size: 0.7em;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.store {
-    font-weight: 900;
-}
-
-.googleplay-button {
-    margin-top: 1em;
-}
-
-
-/* ******ШАПКА****** */
-
-/* ******ОСНОВНАЯ ИНФОРМАЦИЯ - АТЛЕТЫ */
-
-.athlets-title {
-    color: #e7e7e7;
-    text-transform: uppercase;
-    font-size: 3.5em;
-    letter-spacing: 5px;
-    margin-left: 0.5em;
-}
-
-.footballer {
-    position: absolute;
-    width: 17em;
-    left: 5em;
-    margin-top: 1.5em;
-}
-
-.info-list-title {
+.title {
     font-size: 2em;
-    color: #c1c1c1;
     text-transform: uppercase;
+    color: #c1c1c1;
     margin-left: 1em;
-    letter-spacing: 1.5px;
+    padding-top: 1em;
 }
 
-.connection-list-info {
+.card-text {
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
+
+.connection {
     background-color: #fafafa;
-    margin-top: 21.5em;
+    margin-top: 18em;
+    padding-top: 3em;
 }
 
-.connection-info {
-    padding-top: 6em;
-    padding-bottom: 2em;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.connection::before {
+.connection .card-info .title::before {
     content: "01";
     position: absolute;
-    border-bottom: 0.2em solid #5e42b0;
+    border-bottom: 5px solid #5e42b0;
     font-size: 0.6em;
     font-weight: 900;
     color: #000;
-    left: 2em;
+    left: 1em;
     margin-top: 0.2em;
 }
 
-.collaboration-list-info {
+.collaboration {
     background-color: #f5f4f9;
 }
 
-.collaboration-info {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.collaboration::before {
+.collaboration .card-info .title::before {
     content: "02";
     position: absolute;
-    border-bottom: 0.2em solid #5e42b0;
+    border-bottom: 5px solid #5e42b0;
     font-size: 0.6em;
     font-weight: 900;
     color: #000;
-    left: 2em;
+    left: 1em;
     margin-top: 0.2em;
 }
 
-.growth-list-info {
+.growth {
     background-color: #5e42b0;
+    color: #fff;
 }
 
-.growth-info {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.growth::before {
+.growth .card-info .title::before {
     content: "03";
     position: absolute;
-    border-bottom: 0.2em solid #fff;
+    border-bottom: 5px solid #fff;
     font-size: 0.6em;
     font-weight: 900;
     color: #000;
-    left: 2em;
+    left: 1em;
     margin-top: 0.2em;
 }
 
-.info-list-text {
-    font-size: 1em;
-    margin-top: 1.5em;
-    letter-spacing: 1.5px;
+.players-growth {
+    background-color: #090c35;
 }
 
-/* ******ОСНОВНАЯ ИНФОРМАЦИЯ - АТЛЕТЫ */
+.players-growth .card-info .title::before {
+    content: "03";
+    position: absolute;
+    border-bottom: 5px solid #fff;
+    font-size: 0.6em;
+    font-weight: 900;
+    color: #8765dd;
+    left: 1em;
+    margin-top: 0.2em;
+}
+
+
+
+
+/* ****** ОСНОВНАЯ ИНФОРМАЦИЯ ****** */
