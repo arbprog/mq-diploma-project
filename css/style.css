@@ -100,13 +100,13 @@ a {
 
   .appstore, .googleplay {
       display: flex;
+      justify-content: center;
       align-items: center;
       padding: 0.5em;
   }
 
   .store-logo {
       width: 2.5em;
-      margin-left: 6em;
   }
 
   .button-title {
@@ -123,7 +123,7 @@ a {
   .googleplay {
       margin-top: 1em;
   }
-  
+
 /* ****** ШАПКА ****** */
 
 /* ****** ОСНОВНАЯ ИНФОРМАЦИЯ ****** */
