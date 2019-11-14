@@ -84,19 +84,23 @@ a {
       margin-top: 8em;
   }
 
-  .buttons {
+  .buttons { 
+      position: relative;
       padding-bottom: 8em;
+      z-index: 1;
   }
 
   .button {
-      display: flex;
       width: 90%;
+      background-color: #5e42b0;
       margin-left: auto;
       margin-right: auto;
-      position: relative;
-      background-color: #5e42b0;
       border-radius: 30px;
-      align-items: flex-end;
+  }
+
+  .appstore, .googleplay {
+      display: flex;
+      align-items: center;
       padding: 0.5em;
   }
 
@@ -136,6 +140,7 @@ a {
 
 .card-image {
     position: absolute;
+    left: 50%;
 }
 
 .footballer {
