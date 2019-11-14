@@ -138,13 +138,11 @@ a {
     letter-spacing: 2px;
 }
 
-.card-image {
+.footballer, .basketballer {
+    width: 100%;
+    display: flex;
     position: absolute;
-    left: 50%;
-}
-
-.footballer {
-    left: 5em;
+    justify-content: center;
 }
 
 .card-info {
