@@ -255,7 +255,7 @@ a {
 
 .footer {
     position: relative;
-    background-image: url(../images/img/football_767.jpg);
+    background-image: url(../images/img/game_767.jpg);
     background-color: #000;
     background-repeat: no-repeat;
     background-size: 150%;
@@ -285,14 +285,14 @@ a {
     width: 5rem;
     margin-left: auto;
     margin-right: auto;
-    top: 10rem;
+    top: 8rem;
 }
 
 .footer-title {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 18rem;
+    margin-top: 15rem;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -309,13 +309,13 @@ a {
 }
 
 .footer .buttons-list{
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 .footer-container-logo {
     display: flex;
     justify-content: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 /* ФУТЕР */
