@@ -1,6 +1,9 @@
 :root {
     box-sizing: border-box;
-    font-size: calc(1vw + 0.6em);
+}
+
+html {
+    font-size: 10px;
 }
 
 * {
@@ -39,7 +42,7 @@ a {
     background-color: #000;
     background-repeat: no-repeat;
     background-size: 150%;
-    background-position: -5.5em -2.5em;
+    background-position: -4.5rem -2.5rem;
 }
 
 .header::before {
@@ -63,32 +66,32 @@ a {
 }
 
 .surface-logo {
-    width: 10em;
-    margin-top: 2em;
+    width: 10rem;
+    margin-top: 2rem;
 }
 
 .header-container-info {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 11.5em;
+    margin-top: 11.5rem;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 .second-slogan {
-    margin-left: 3em;
-    margin-top: 0.5em;
+    margin-left: 7rem;
+    margin-top: 1rem;
 }
 
 .buttons-list {
-    margin-top: 8em;
+    margin-top: 8rem;
 }
 
 
 .buttons { 
     position: relative;
-    padding-bottom: 8em;
+    padding-bottom: 8rem;
     z-index: 1;
 }
 
@@ -104,18 +107,18 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 .store-logo {
-    width: 2.5em;
+    width: 2.5rem;
 }
 
 .button-title {
-    font-size: 0.7em;
+    font-size: 0.9rem;
     color: #fff;
     text-transform: uppercase;
-    margin-left: 0.8em;
+    margin-left: 0.8rem;
 }
 
 .button-store-title {
@@ -123,7 +126,7 @@ a {
 }
 
 .googleplay {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 /* ШАПКА */
@@ -141,7 +144,7 @@ a {
 }
 
 .athlets-title, .players-title {
-    font-size: 4em;
+    font-size: 4rem;
     text-transform: uppercase;
     color: #e7e7e7;
 }
@@ -153,14 +156,14 @@ a {
 }
 
 .card-info {
-    padding-top: 2em;
-    padding-bottom: 3em;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .connection {
-    padding-top: 5em;
+    padding-top: 9rem;
     background-color: #fafafa;
-    margin-top: 17.5em;
+    margin-top: 22rem;
 }
 
 .collaboration {
@@ -177,7 +180,7 @@ a {
 }
 
 .number {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: #000;
     font-weight: 900;
     border-bottom: 5px solid #5e42b0;
@@ -186,13 +189,14 @@ a {
 .title {
     color: #c1c1c1;
     text-transform: uppercase;
-    font-size: 1.5em;
-    margin-left: 0.3em;
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
     letter-spacing: 1px;
 }
 
 .card-info-text {
-    margin-top: 1em;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 
@@ -229,25 +233,89 @@ a {
 .action .card-info-title {
     width: fit-content;
     position: absolute;
-    left: 1.1em;
-    bottom: 15em;
-    padding: 1em 1.5em;
+    left: 1.1rem;
+    bottom: 16.5rem;
+    padding: 1rem 1.5rem;
     background-color: #5e42b0;
 }
 
 .action .card-info-title .number {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: #f5f6f7;
     border-bottom: 3px solid #8f7bc8;
 }
 
 .action .title {
-    margin-top: 1em;
-    margin-left: 0.8em;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
 }
 
 /* ОСНОВНАЯ ИНФОРМАЦИЯ */
 /* ФУТЕР */
 
+.footer {
+    position: relative;
+    background-image: url(../images/img/football_767.jpg);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: -4.5rem -2.5rem;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(12, 3, 39, 0.9);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+.footer-container {
+    position: relative;
+    z-index: 1;
+}
+
+.surface-logo-img {
+    position: relative;
+    background-color: #7252cf;
+    padding: 1rem;
+    border-radius: 30%;
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10rem;
+}
+
+.footer-title {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 18rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-first-title {
+    font-size: 3.2rem;
+}
+
+.footer-second-title {
+    position: relative;
+    font-size: 1.3rem;
+    color: #8a7eae;
+}
+
+.footer .buttons-list{
+    margin-top: 10rem;
+}
+
+.footer-container-logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
 
 /* ФУТЕР */
