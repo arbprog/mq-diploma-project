@@ -1,0 +1,858 @@
+@font-face {
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
+
+  font-family: OpenSans;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+
+  font-family: OpenSans;
+  font-weight: bold;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: OpenSans, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+section,
+footer {
+  box-sizing: border-box;
+  position: relative;
+}
+
+header {
+  background-image: url("../images/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 9.5vw 105px;
+  box-sizing: border-box;
+}
+
+header .container {
+  width: 231px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header .surface_logo {
+  width: 200px;
+  height: 60px;
+  float: left;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 90px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 296px 3.1vw 221px 0.8vw;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 span span {
+  align-self: flex-end;
+  font-weight: bold;
+  margin-left: 10vw;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  width: 310px;
+  height: 75px;
+  border-radius: 37px;
+  background-color: #5e42b0;
+  box-sizing: border-box;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+a:hover {
+  background-color: #2a1d4f;
+}
+
+a svg {
+  width: 40px;
+  height: 50px;
+  fill: #ffffff;
+}
+
+a > div {
+  font-size: 14px;
+}
+
+a div div {
+  font-weight: bold;
+}
+
+.appstore {
+  padding-left: 38px;
+  box-sizing: border-box;
+}
+
+.googleplay {
+  padding-left: 56px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 1;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin: 90px 0 30px;
+}
+
+h3 .number {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 14px;
+  padding-top: 4px;
+  height: 36px;
+  display: block;
+}
+
+h3 .number::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  background-color: #5e42b0;
+  position: absolute;
+  bottom: 4px;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.athlets > div {
+  box-sizing: border-box;
+  padding-left: 52%;
+}
+
+.athlets .picture {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+
+.athlets .picture picture {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  height: 100%;
+}
+
+.athlets_connection {
+  padding: 120px 9.5vw 66px;
+  box-sizing: border-box;
+}
+
+.athlets_collaboration {
+  background-color: #f6f4fa;
+  padding: 60px 9.5vw 69px;
+  box-sizing: border-box;
+}
+
+.athlets_collaboration h3,
+.athlets_growth h3 {
+  margin-top: 0;
+}
+
+.athlets_growth {
+  background-color: #5e42b0;
+  padding: 90px 9.5vw 100px;
+  box-sizing: border-box;
+}
+
+.athlets_growth p {
+  color: white;
+  font-weight: normal;
+}
+
+.athlets_growth h3 .number {
+  color: #0a0e34;
+}
+
+.athlets_growth h3 .number::before {
+  background-color: #efefef;
+}
+
+.players {
+  overflow: hidden;
+}
+
+.players > div {
+  padding-right: 48%;
+  padding-left: 17vw;
+}
+
+.players_connection {
+  padding: 88px 9.5vw 72px;
+  box-sizing: border-box;
+}
+
+.players_collaboration {
+  background-color: #f5f6f7;
+  padding: 56px 9.5vw 76px;
+  box-sizing: border-box;
+}
+
+.players_collaboration h3,
+.players_growth h3 {
+  margin-top: 0;
+}
+
+.players_growth {
+  background-color: #0a0e34;
+  padding: 93px 9.5vw 94px;
+  box-sizing: border-box;
+}
+
+.players_growth p {
+  color: white;
+  font-weight: normal;
+}
+
+.players_growth h3 .number {
+  color: #9173e6;
+}
+
+.players_growth h3 .number::before {
+  background-color: white;
+}
+
+.players .picture {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 0;
+}
+
+.players .picture picture {
+  position: absolute;
+  left: -8vw;
+  top: 0;
+  max-height: 100%;
+}
+
+.rules {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.rule {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  position: relative;
+}
+
+.rule img,
+.rule .text {
+  width: 50%;
+  height: 100%;
+}
+
+.rule:nth-child(even) picture {
+  order: 2;
+}
+
+.rule picture {
+  width: 50%;
+}
+
+.rule picture img {
+  width: 100%;
+}
+
+.rule .text {
+  padding: 13.7vw 6.9vw 11.1vw 6.7vw;
+  box-sizing: border-box;
+}
+
+.rule .text h2 {
+  margin-bottom: 6vw;
+}
+
+.rule .number {
+  width: 8.6vw;
+  height: 8vw;
+  position: absolute;
+  top: 11vw;
+  left: 50%;
+  margin-left: -4.3vw;
+  background-color: #5e42b0;
+  color: #f5f6f7;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rule .number > div {
+  position: relative;
+  line-height: 1;
+  padding-bottom: 0.2em;
+}
+
+.rule .number > div::after {
+  content: "";
+  background-color: #8f7bc8;
+  height: 0.1em;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+footer {
+  background-image: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 250px 9.5vw 50px;
+  box-sizing: border-box;
+}
+
+footer p {
+  color: #a496ca;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+footer .app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+
+footer .icon {
+  width: 6.8vw;
+  height: 7.1vw;
+  background-color: #553ba2;
+  display: flex;
+  align-items: center;
+  float: left;
+  border-radius: 22px;
+  box-sizing: border-box;
+  padding: 1.3vw 0.8vw;
+}
+
+footer .download {
+  margin-top: 162px;
+  margin-bottom: 258px;
+}
+
+footer .surface {
+  width: 5.2vw;
+  height: 4.7vw;
+  float: left;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: center;
+}
+
+footer .logo svg {
+  height: 55px;
+  width: 10vw;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 961px) {
+  .rules h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h1 span span {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 641px) {
+  header {
+    background-image: url("../images/header-background-768.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 38px 4.3vw 88px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 80px;
+    margin: 180px 3vw 310px 4vw;
+  }
+
+  h1 span span {
+    margin-left: 9.6vw;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .athlets > div {
+    box-sizing: border-box;
+    padding-left: 37.5%;
+  }
+
+  .athlets_connection {
+    box-sizing: border-box;
+    padding: 85px 4.3vw 74px;
+  }
+
+  .athlets_connection h3 {
+    margin-top: 60px;
+    margin-bottom: 32px;
+  }
+
+  .athlets_collaboration {
+    box-sizing: border-box;
+    padding: 42px 4.3vw;
+  }
+
+  .athlets_collaboration h3 {
+    margin-bottom: 32px;
+  }
+
+  .athlets_growth {
+    box-sizing: border-box;
+    padding: 42px 4.3vw 67px;
+  }
+
+  .athlets_growth h3 {
+    margin-bottom: 32px;
+  }
+
+  .athlets .picture picture {
+    left: 0;
+    top: 88px;
+    height: 100%;
+  }
+
+  .players_connection {
+    box-sizing: border-box;
+    padding: 82px 4.3vw 49px;
+  }
+
+  .players_connection h3 {
+    margin-top: 61px;
+    margin-bottom: 34px;
+  }
+
+  .players_collaboration {
+    box-sizing: border-box;
+    padding: 63px 4.3vw 74px;
+  }
+
+  .players_collaboration h3 {
+    margin-bottom: 33px;
+  }
+
+  .players_growth {
+    box-sizing: border-box;
+    padding: 54px 4.3vw 53px;
+  }
+
+  .players_growth h3 {
+    margin-bottom: 32px;
+  }
+
+  .players .picture picture {
+    left: auto;
+    right: 0;
+    top: 0;
+  }
+
+  .rule {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rule picture {
+    width: 100vw;
+  }
+
+  .rule .text {
+    width: 100vw;
+    height: auto;
+  }
+
+  .rule:nth-child(even) picture {
+    order: 0;
+  }
+
+  .be .text {
+    box-sizing: border-box;
+    padding-top: 93px;
+    padding-bottom: 102px;
+  }
+
+  .find .text {
+    box-sizing: border-box;
+    padding-top: 82px;
+    padding-bottom: 109px;
+  }
+
+  .work .text {
+    box-sizing: border-box;
+    padding-top: 82px;
+    padding-bottom: 115px;
+  }
+
+  .rule .number {
+    width: 15.1vw;
+    height: 15.1vw;
+    top: calc(75.9vw - 10.6vw);
+    left: 4.3vw;
+    margin-left: 0;
+  }
+
+  footer {
+    box-sizing: border-box;
+    padding: 125px 4.3vw 21px;
+  }
+
+  footer .app {
+    margin: 0;
+  }
+
+  footer .icon {
+    width: 16.9vw;
+    height: 17.6vw;
+    float: none;
+    margin: 0 auto 74px;
+  }
+
+  footer .surface {
+    width: 13.4vw;
+    height: 11.1vw;
+  }
+
+  footer h2 {
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0 auto 278px;
+    text-align: center;
+  }
+
+  footer .logo {
+    margin: 46px auto 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .logo svg {
+    height: 56px;
+    width: 26.7vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    background-image: url("../images/header-background-320.png");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 33px 6.25vw 84px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 136px 7.2vw 90px 4.7vw;
+  }
+
+  h1 span span {
+    margin-top: 30px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .download {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download a {
+    width: 300px;
+    height: 35px;
+    max-width: 87.5vw;
+    margin: 15px 0 0;
+    box-sizing: border-box;
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
+
+  .download a div {
+    font-size: 8px;
+  }
+
+  a svg {
+    width: 20px;
+    height: 24px;
+  }
+
+  .athlets .picture {
+    position: absolute;
+    width: 100%;
+  }
+
+  .athlets .picture picture {
+    top: 80px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .athlets h2 {
+    margin-bottom: 325px;
+  }
+
+  .athlets > div {
+    padding: 0;
+  }
+
+  .athlets .athlets_connection {
+    padding: 27px 6.25vw 15px;
+    box-sizing: border-box;
+  }
+
+  .athlets_connection h3 {
+    margin-bottom: 70px;
+  }
+
+  .athlets .athlets_collaboration {
+    padding: 57px 6.25vw 55px;
+    box-sizing: border-box;
+  }
+
+  .athlets .athlets_growth {
+    padding: 57px 6.25vw 37px;
+    box-sizing: border-box;
+  }
+
+  .players h2 {
+    margin-bottom: 325px;
+  }
+
+  .players .picture {
+    width: 100%;
+  }
+
+  .players .picture picture {
+    top: 84px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .players .players_connection {
+    padding: 26px 6.25vw 55px;
+    box-sizing: border-box;
+  }
+
+  .players_connection h3 {
+    margin-bottom: 30px;
+  }
+
+  .players .players_collaboration {
+    padding: 57px 6.25vw 55px;
+    box-sizing: border-box;
+  }
+
+  .players .players_growth {
+    padding: 54px 6.25vw 55px;
+    box-sizing: border-box;
+  }
+
+  .rules h2 {
+    font-size: 28px;
+  }
+
+  .rules p {
+    font-size: 16px;
+  }
+
+  .rule {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rule picture,
+  .rule img {
+    width: 100vw;
+  }
+
+  .rule:nth-child(even) picture {
+    order: 0;
+  }
+
+  .rule .text {
+    padding: 33px 6.75vw 79px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+  }
+
+  .be .text {
+    box-sizing: border-box;
+    padding-top: 35px;
+    padding-bottom: 81px;
+  }
+
+  .find .text {
+    box-sizing: border-box;
+    padding-top: 37px;
+    padding-bottom: 82px;
+  }
+
+  .work .text {
+    box-sizing: border-box;
+    padding-top: 37px;
+    padding-bottom: 70px;
+  }
+
+  .rule .number {
+    width: 21.9vw;
+    height: 21.9vw;
+    top: 91.3vw;
+    left: 6.75vw;
+    margin-left: 0;
+  }
+
+  footer {
+    box-sizing: border-box;
+    padding: 100px 6.25vw 7px;
+  }
+
+  footer .app {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  footer .icon {
+    width: 22.5vw;
+    height: 23.4vw;
+    float: none;
+    margin: 0 auto 59px;
+  }
+
+  footer .surface {
+    width: 18.1vw;
+    height: 15vw;
+  }
+
+  footer .download {
+    margin-top: 77px;
+    margin-bottom: 86px;
+    padding: 0;
+  }
+
+  footer h2 {
+    font-size: 32px;
+    margin: 0 auto 13px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 14px;
+    margin: 0 auto 0;
+    text-align: center;
+  }
+
+  footer .logo {
+    margin: 26px auto 7px;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .logo svg {
+    height: 37px;
+    width: 41.6vw;
+  }
+}
